@@ -9,9 +9,9 @@ map <leader>n :NERDTreeToggle<CR>
 syntax on
 filetype plugin indent on
 
-set backspace=2
+set backspace=indent,eol,start " better behaved backspace
+
 set shiftround
-set autoindent
 
 set mouse=a
 
@@ -19,6 +19,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set smarttab
+set autoindent
 
 set incsearch
 set number
