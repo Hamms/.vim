@@ -7,7 +7,11 @@ filetype on
 map <leader>n :NERDTreeToggle<CR>
 
 syntax on
-filetype plugin indent on
+" filetype plugin indent on
+
+" OH MY GOD YOU CAN ELIMINATE SWAPFILES
+set nobackup
+set noswapfile
 
 set backspace=indent,eol,start " better behaved backspace
 
