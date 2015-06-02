@@ -15,6 +15,8 @@ set noswapfile
 
 set backspace=indent,eol,start " better behaved backspace
 
+set fileformat=unix
+
 set shiftround
 
 set mouse=a
@@ -55,3 +57,18 @@ set formatoptions=cq
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.less set filetype=less
 
+"
+" vp doesn't replace paste buffer
+"
+
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+
+function! s:Repl()
+  let s:restore_reg = @"
+  return "p@=RestoreRegister()\<cr>"
+endfunction
+
+vmap <silent> <expr> p <sid>Repl()
