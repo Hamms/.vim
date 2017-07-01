@@ -29,9 +29,15 @@ set softtabstop=2
 set expandtab
 set smarttab
 set autoindent
+set title
+
+set wildmode=longest,list,full
+set wildmenu
 
 set incsearch
+set hlsearch
 set number
+set relativenumber
 set numberwidth=4
 
 set nowrap
