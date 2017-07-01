@@ -4,8 +4,6 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype on
 
-map <leader>n :NERDTreeToggle<CR>
-
 syntax on
 let g:loaded_syntastic_cucumber_cucumber_checker=''
 let g:syntastic_javascript_checkers = ['eslint']
