@@ -7,7 +7,9 @@ filetype on
 map <leader>n :NERDTreeToggle<CR>
 
 syntax on
-" filetype plugin indent on
+let g:loaded_syntastic_cucumber_cucumber_checker=''
+let g:syntastic_javascript_checkers = ['eslint']
+filetype plugin on
 
 " OH MY GOD YOU CAN ELIMINATE SWAPFILES
 set nobackup
