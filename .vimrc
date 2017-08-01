@@ -4,6 +4,14 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype on
 
+" vim-plug configuration from https://github.com/junegunn/vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss'] }
+let g:prettier#config#bracket_spacing = 'true'
+call plug#end()
+
 syntax on
 let g:loaded_syntastic_cucumber_cucumber_checker=''
 let g:syntastic_javascript_checkers = ['eslint']
