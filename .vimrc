@@ -86,3 +86,5 @@ function! s:Repl()
 endfunction
 
 vmap <silent> <expr> p <sid>Repl()
+
+source ~/.regexlist.vim
