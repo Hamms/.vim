@@ -1,8 +1,13 @@
 .vim
 ====
 
+Note: No longer maintained
+--------------------------
+
+New stuff is going in https://github.com/hamms/dotfiles
+
 Installation
-==
+------------
 
 clone into ~/.vim
 
